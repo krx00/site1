@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Сайт с дизайном</title>
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo"></a>
+                    <div class="header-menu">
+                        <a href="#main" class="header-menu__link">Главная</a>
+                        <a href="#about" class="header-menu__link">О секции</a>
+                        <a href="#youtube" class="header-menu__link">Ютуб</a>
+                        <a href="#tiktok" class="header-menu__link">Тикток</a>
+                        <a href="#event" class="header-menu__link">События</a>
+                        <a href="#swiper" class="header-menu__link">Слайдер</a>
+                        <div class="header-theme">
+                            <button id="light" class="header-theme__button">
+                                Светлая тема
+                            </button>
+                            <button id="dark" class="header-theme__button">
+                                Тёмная тема
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section class="main" id="main">
+                <div class="wrapper">
+                    <div class="main__wrapper">
+                        <div class="main-left">
+                            <h1 class="main-left__title">
+                                Это мой сайт
+                            </h1>
+                            <div id="mainText" class="main-left__text">
+
+                            </div>
+                        </div>
+                        <div class="main-right main-right__img"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="wrapper">
+                    <div class="about__wrapper">
+                        <h2 class="about_title">Секция с фоном</h2>
+                        <img src="https://znanie-sila.su/wp-content/uploads/2018/04/1497335468_landscape.jpg" alt="about image" class="about__img">
+                        <p class="about_text">
+                             С помощью свойства background можно задать фоновую картинку и изменить ещё много свойств для фона
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="youtube" id="youtube">
+                <div class="wrapper">
+                    <div class="youtube__wrapper">
+                        <h2 class="youtube__title">
+                            Видео с капибарами 
+                        </h2>
+                        <iframe width="800px" height="500px" src="https://www.youtube.com/embed/Zai_sFsQy9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="tiktok" id="tiktok">
+                <div class="wrapper">
+                    <div class="tiktok__wrapper">
+                        <h2 class="tiktok__title">
+                            Видео из тикток
+                        </h2>
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nagasakibiopark/video/7199903952983330050" data-video-id="7199903952983330050" style="max-width: 300px;" > <section> <a target="_blank" title="@nagasakibiopark" href="https://www.tiktok.com/@nagasakibiopark?refer=embed">@nagasakibiopark</a> masbro<a title="長崎バイオパーク" target="_blank" href="https://www.tiktok.com/tag/%E9%95%B7%E5%B4%8E%E3%83%90%E3%82%A4%E3%82%AA%E3%83%91%E3%83%BC%E3%82%AF?refer=embed">#長崎バイオパーク</a> <a title="capybara" target="_blank" href="https://www.tiktok.com/tag/capybara?refer=embed">#capybara</a> <a title="カピバラ" target="_blank" href="https://www.tiktok.com/tag/%E3%82%AB%E3%83%94%E3%83%90%E3%83%A9?refer=embed">#カピバラ</a> <a target="_blank" title="♬ Капибара - Capybara - Сто-Личный Она-Нас" href="https://www.tiktok.com/music/Капибара-Capybara-7121057779804833794?refer=embed">♬ Капибара - Capybara - Сто-Личный Она-Нас</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+            </section>
+            <section class="event" id="event">
+                <div class="wrapper">
+                    <div class="event__wrapper">
+                        <h2 id="eventTitle" class="event__title">
+                            Секция событий:
+                        </h2>
+                        <div class="event__btns">
+                            <button onclick="alert('Событие в HTML')" class="event__btn">
+                                alert событие в HTML
+                            </button>
+                            <button onclick="message()" class="event__btn">
+                                alert функция из тега script
+                            </button>
+                            <button onclick="showMessage()" class="event__btn">
+                                Откат заголовка
+                            </button>
+                            <button onclick="changeTitle()" class="event__btn">
+                                Изменение заголовка
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="swiper" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="swiper-text">Капибара</p>    
+                        <img src="https://images.techinsider.ru/upload/img_cache/2d9/2d9a23c425d68b4589ad99a666c0ac69_ce_1245x830x0x0_cropped_666x444.png" alt="kapibara" class="swiper_img">
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="swiper-text">Альпака</p>    
+                        <img class="swiper_img" src="data:image/jpeg;base64,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" alt="alpaka">
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="swiper-text">Котик</p>    
+                        <img class="swiper_img" src="https://oir.mobi/uploads/posts/2022-09/1662153596_1-oir-mobi-p-kotik-s-yazikom-pinterest-1.jpg" alt="cat">
+                    </div>
+                </div>
+            </div>
+            <section class='section-creator'>
+                <div class="wrapper">
+                    <form class="section-creator__wrapper">
+                        <div>
+                            <input id="titleCreator" class="section-creator__input" type="text" placeholder="Введите заголовок">
+                            <button type="button" id="addTitle" class="section-creator__button">Добавить заголовок</button>
+                        </div>
+                        <div>
+                            <input id="imgCreator" class="section-creator__input" type="text" placeholder="Вставьте ссылку на картинку">
+                            <button type="button" id="addImage" class="section-creator__button">Добавить картинку</button>
+                        </div>
+                        <div>
+                            <textarea placeholder="Напишите текст" id="textCreator" class="section-creator__input">
+                            </textarea>
+                            <button type="button" id="addText" class="section-creator__button">Добавить текст</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class='project' id="project">
+                <div class='wrapper'>
+                    <div class='project__wrapper'>
+                        <div class='project__left'>
+                            <h2 id='projectTitle' class='project__title'></h2>
+                            <p id='projectText' class='project__text'></p>
+                        </div>
+                        <div id='projectImg' class='project__img'></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                effect: 'flip',
+                autoplay: true,
+            });
+
+            const str = 'Hello!';
+            function hello() {
+                alert(str);
+            }
+
+            function message() {
+                alert( 'Функция из тега script внутри HTML' );
+            }
+        </script>
+
+
+        <script src="script.js"></script>
+    </body> 
+</html>
